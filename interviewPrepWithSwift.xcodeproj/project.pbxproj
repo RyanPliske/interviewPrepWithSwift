@@ -14,6 +14,7 @@
 		EF6482421B59D4B700AD92CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6482411B59D4B700AD92CA /* Images.xcassets */; };
 		EF6482451B59D4B700AD92CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6482431B59D4B700AD92CA /* LaunchScreen.xib */; };
 		EF6482511B59D4B700AD92CA /* interviewPrepWithSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6482501B59D4B700AD92CA /* interviewPrepWithSwiftTests.swift */; };
+		EF6A3BC71B5B06B300DE58E5 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A3BC61B5B06B300DE58E5 /* UIViewController+Tracking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 		EF64824A1B59D4B700AD92CA /* interviewPrepWithSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = interviewPrepWithSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF64824F1B59D4B700AD92CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF6482501B59D4B700AD92CA /* interviewPrepWithSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interviewPrepWithSwiftTests.swift; sourceTree = "<group>"; };
+		EF6A3BC41B5B06B300DE58E5 /* interviewPrepWithSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "interviewPrepWithSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF6A3BC51B5B06B300DE58E5 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		EF6A3BC61B5B06B300DE58E5 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +85,14 @@
 			children = (
 				EF6482371B59D4B700AD92CA /* AppDelegate.swift */,
 				EF64823C1B59D4B700AD92CA /* ViewController.swift */,
+				EF6A3BC51B5B06B300DE58E5 /* UIViewController+Tracking.h */,
+				EF6A3BC61B5B06B300DE58E5 /* UIViewController+Tracking.m */,
 				EF64823E1B59D4B700AD92CA /* Main.storyboard */,
 				EF6482411B59D4B700AD92CA /* Images.xcassets */,
 				EF6482431B59D4B700AD92CA /* LaunchScreen.xib */,
 				EF6482391B59D4B700AD92CA /* interviewPrepWithSwift.xcdatamodeld */,
 				EF6482351B59D4B700AD92CA /* Supporting Files */,
+				EF6A3BC41B5B06B300DE58E5 /* interviewPrepWithSwift-Bridging-Header.h */,
 			);
 			path = interviewPrepWithSwift;
 			sourceTree = "<group>";
@@ -216,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF64823D1B59D4B700AD92CA /* ViewController.swift in Sources */,
+				EF6A3BC71B5B06B300DE58E5 /* UIViewController+Tracking.m in Sources */,
 				EF64823B1B59D4B700AD92CA /* interviewPrepWithSwift.xcdatamodeld in Sources */,
 				EF6482381B59D4B700AD92CA /* AppDelegate.swift in Sources */,
 			);
@@ -344,9 +352,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = interviewPrepWithSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "interviewPrepWithSwift/interviewPrepWithSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,9 +365,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = interviewPrepWithSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "interviewPrepWithSwift/interviewPrepWithSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -413,6 +426,7 @@
 				EF6482561B59D4B700AD92CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF6482571B59D4B700AD92CA /* Build configuration list for PBXNativeTarget "interviewPrepWithSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +435,7 @@
 				EF6482591B59D4B700AD92CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
