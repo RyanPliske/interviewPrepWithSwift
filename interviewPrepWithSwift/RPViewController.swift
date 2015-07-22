@@ -21,10 +21,10 @@ class RPViewController: UIViewController {
     }
 
     func handleNil() {
-        var ryansName : NSString?
+        let ryansName : NSString? = nil
         
-        if (ryansName!.length == 4) {
-            print("Ryan's name is four letters long")
+        if (ryansName != nil) {
+            print("Ryan's name is four letters long", appendNewline: false)
         }
     }
     
@@ -47,13 +47,13 @@ class RPViewController: UIViewController {
     func logItems() {
         if let items = itemsFromClass {
             for item in items {
-                print("\(item)")
+                print("\(item)", appendNewline: false)
             }
         }
         
         if let items = itemsFromInstance {
             for item in items {
-                print("\(item)")
+                print("\(item)", appendNewline: false)
             }
         }
     }

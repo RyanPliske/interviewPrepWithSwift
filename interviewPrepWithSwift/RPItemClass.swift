@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Ryan Pliske. All rights reserved.
 //
 
-class RPItemClass : Printable {
+class RPItemClass : CustomStringConvertible {
     var itemName : String
     var serialNumber : String?
     var valueInDollars : Float?
@@ -17,7 +17,7 @@ class RPItemClass : Printable {
     }
     
     var description : String {
-        var descriptionOfItem = "\nItem Name: \(itemName),\nItem Serial Number: \(serialNumber),\nItem Value : \(valueInDollars),\nItem Creation Date: \(dateCreated)\n\n"
+        let descriptionOfItem = "\nItem Name: \(itemName),\nItem Serial Number: \(serialNumber),\nItem Value : \(valueInDollars),\nItem Creation Date: \(dateCreated)\n\n"
         return descriptionOfItem
     }
 }
