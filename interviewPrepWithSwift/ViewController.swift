@@ -9,12 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var ryansName : NSString?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var ryansName : NSString = NSString()
-        if (ryansName.length == 4) {
+        if (ryansName!.length == 4) {
             print("Ryan's name is four letters long")
         }
         
