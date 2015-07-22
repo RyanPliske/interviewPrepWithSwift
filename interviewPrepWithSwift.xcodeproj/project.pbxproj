@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		EF6482381B59D4B700AD92CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6482371B59D4B700AD92CA /* AppDelegate.swift */; };
 		EF64823B1B59D4B700AD92CA /* interviewPrepWithSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF6482391B59D4B700AD92CA /* interviewPrepWithSwift.xcdatamodeld */; };
-		EF64823D1B59D4B700AD92CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64823C1B59D4B700AD92CA /* ViewController.swift */; };
+		EF64823D1B59D4B700AD92CA /* RPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64823C1B59D4B700AD92CA /* RPViewController.swift */; };
 		EF6482401B59D4B700AD92CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF64823E1B59D4B700AD92CA /* Main.storyboard */; };
 		EF6482421B59D4B700AD92CA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6482411B59D4B700AD92CA /* Images.xcassets */; };
 		EF6482451B59D4B700AD92CA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF6482431B59D4B700AD92CA /* LaunchScreen.xib */; };
 		EF6482511B59D4B700AD92CA /* interviewPrepWithSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6482501B59D4B700AD92CA /* interviewPrepWithSwiftTests.swift */; };
 		EF6A3BC71B5B06B300DE58E5 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6A3BC61B5B06B300DE58E5 /* UIViewController+Tracking.m */; };
+		EF880F831B5F3557003CF9E9 /* RPItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF880F821B5F3557003CF9E9 /* RPItemClass.swift */; };
+		EF880F861B5F513E003CF9E9 /* RPItemStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF880F851B5F513E003CF9E9 /* RPItemStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,7 @@
 		EF6482361B59D4B700AD92CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF6482371B59D4B700AD92CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF64823A1B59D4B700AD92CA /* interviewPrepWithSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = interviewPrepWithSwift.xcdatamodel; sourceTree = "<group>"; };
-		EF64823C1B59D4B700AD92CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF64823C1B59D4B700AD92CA /* RPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPViewController.swift; sourceTree = "<group>"; };
 		EF64823F1B59D4B700AD92CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF6482411B59D4B700AD92CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EF6482441B59D4B700AD92CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		EF6A3BC41B5B06B300DE58E5 /* interviewPrepWithSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "interviewPrepWithSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		EF6A3BC51B5B06B300DE58E5 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
 		EF6A3BC61B5B06B300DE58E5 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		EF880F821B5F3557003CF9E9 /* RPItemClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPItemClass.swift; sourceTree = "<group>"; };
+		EF880F851B5F513E003CF9E9 /* RPItemStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPItemStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				EF6482371B59D4B700AD92CA /* AppDelegate.swift */,
-				EF64823C1B59D4B700AD92CA /* ViewController.swift */,
+				EF64823C1B59D4B700AD92CA /* RPViewController.swift */,
+				EF880F821B5F3557003CF9E9 /* RPItemClass.swift */,
+				EF880F851B5F513E003CF9E9 /* RPItemStruct.swift */,
 				EF6A3BC51B5B06B300DE58E5 /* UIViewController+Tracking.h */,
 				EF6A3BC61B5B06B300DE58E5 /* UIViewController+Tracking.m */,
 				EF64823E1B59D4B700AD92CA /* Main.storyboard */,
@@ -222,10 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF64823D1B59D4B700AD92CA /* ViewController.swift in Sources */,
+				EF64823D1B59D4B700AD92CA /* RPViewController.swift in Sources */,
 				EF6A3BC71B5B06B300DE58E5 /* UIViewController+Tracking.m in Sources */,
 				EF64823B1B59D4B700AD92CA /* interviewPrepWithSwift.xcdatamodeld in Sources */,
 				EF6482381B59D4B700AD92CA /* AppDelegate.swift in Sources */,
+				EF880F831B5F3557003CF9E9 /* RPItemClass.swift in Sources */,
+				EF880F861B5F513E003CF9E9 /* RPItemStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
